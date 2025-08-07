@@ -1,0 +1,416 @@
+// variables
+
+
+// colours
+$yellow:#e6b31b;
+$blue:#1d80a1;
+$black:#212529;
+$white:#f8fafb;
+$grey :#343a40;
+$lightgrey:#79b1c3;
+
+// font//
+// font-family//
+$body-font: Robboto;
+
+   // font-size//
+   $body-font-size: 0,5rem;
+   $header: 2rem;
+   $h1: 4rem;
+   $quotes: 2rem;
+   $button-font: 1rem;
+
+//    font-weight //
+$body-font: 400;
+$header: 800;
+$btn-fw: 600;
+
+
+// padding
+$padding: 10px 20px;
+
+
+
+
+// button//
+$btn-padding :5px 1.5em;
+
+// btn width//
+$btn-width: 13rem;
+
+// btn height //
+$btn-height: 3rem;
+
+// mixins//
+@mixin flexbag{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: $body-font;
+    font-size: $body-font-size;
+    overflow-x: hidden;
+
+}
+
+.banner{
+background-image: url(img/bg-masthead.jpg);
+background-size: cover;
+background-position: center;
+height: 100vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+.banner-h1{
+
+    font-size: $h1;
+
+
+}
+
+.banner-quote{
+    color:$grey;
+    font-size: $header;
+    
+}
+.banner-btn{
+    background-color: $blue;
+     padding: $btn-padding;
+     color: $white;
+     font-weight: $btn-fw;
+     border: none;
+     margin-top: 20px ;
+     border-radius: 5px;
+     width: $btn-width;
+     height: $btn-height;
+}
+
+
+}
+
+// Offer//
+
+.offer{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .offer-quote{
+         margin-bottom: 20px;
+         color: $grey;
+         font-size: 3rem;
+
+
+    }
+    .offer-p{
+        font-size: $body-font;
+        color: grey;
+        margin-top: 20px;
+
+    }
+    .offer-btn{
+
+        background-color: $blue;
+        margin-top: 20px;
+        border-radius: 5px;
+        color: $white;
+        padding: $btn-padding;
+        width: $btn-width;
+        height: $btn-height;
+        border: none;
+        font-weight: $btn-fw ;
+    }
+
+}
+
+// Services//
+.services{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $blue;
+
+.services-h1{
+    color: $yellow;
+    font-size: 1.5rem;
+    font-weight: $btn-fw;
+
+}
+.services-quote{
+    font-size: 2.3rem;
+    color: $white;
+
+}
+.services-container{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 200px;
+    
+
+    .service{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-content: center;
+       width: 100%;
+       
+
+
+        .s-image{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: $white;
+            margin-bottom: 10px;
+            
+           
+        }
+        h3{
+            color: $white;
+            margin-top: 60px;
+
+        }
+        p{
+            
+            color: $white;
+          
+            font-size: 10px;
+           
+        }
+        .fa-solidfa-mustache{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+}
+
+// Welcome//
+.welcome{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   background-image: url(img/bg-callout.jpg);
+   background-position: center;
+   background-size: cover;
+
+   .welcome-quote{
+    font-size: 3rem;
+
+   }
+.download{
+    width: $btn-width;
+    height: $btn-height;
+    background-color: $blue;
+    border-radius: 5px;
+    color: $white;
+    border: none;
+    margin-top: 30px;
+}
+}
+
+// Image //
+
+.portfolio{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+
+.rece{
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+
+
+.image-container{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      }
+    .images{
+         
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+       
+    .image{
+        width: 350px;
+        height: 200px;
+        background-size: cover;
+       background-image: url(img/portfolio-2.jpg);
+       background-position: center;
+       display: flex;
+       flex-direction: column;
+       padding-left: 15px;
+       
+       
+       
+    }
+
+
+}
+
+.head{
+    color: $white;
+    margin: 20px;
+    padding-top: 80px;
+}
+
+.para{
+    color: $white;
+    font-size: 12px;
+}
+
+
+
+
+}
+
+// Buttons/////
+
+.buttons{
+width: 100%;
+height: 350px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+background-color: #1d80a1;
+margin-top: 50px;
+
+p{
+    color: $white;
+    font-size: 1.5rem;
+
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+
+.click{
+    background-color: #f8fafb;
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.look{
+    background-color: #212529;
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    color: #f8fafb;
+    margin: 20px;
+}
+
+}
+
+
+}
+
+// Font//
+
+.icons{
+    width: 100%;
+    height: 200px;
+
+    .icon{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 100px;
+    }
+    P{
+      
+        text-align: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 20px;
+        font-size: 10px;
+    }
+} 
+
+
+
+// MEDIA QUERY//
+
+
+@media (max-width: 768px) { 
+
+  
+      
+            
+             
+            
+     
+    
+    
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
