@@ -165,46 +165,29 @@ flex-direction: column;
     width: 100%;
     height: 350px;
     display: flex;
-    justify-content: center;
+     flex-direction: row;
+     padding-right: 50px;
+ 
+    justify-content: space-between;
     align-items: center;
-    padding-left: 200px;
+    
     
 
     .service{
-        margin: 20px;
-        display: flex;
-        flex-direction: column;
-       justify-content: center;
-       align-content: center;
-       width: 100%;
-       
+    
 
 
-        .s-image{
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            background-color: $white;
-            margin-bottom: 10px;
-            
-           
-        }
-        h3{
+
+                h3{
             color: $white;
-            margin-top: 60px;
 
         }
         p{
-            
+
             color: $white;
-          
+            text-align: justify;
             font-size: 10px;
-           
-        }
-        .fa-solidfa-mustache{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
         }
     }
 }
@@ -380,32 +363,161 @@ p{
         font-size: 10px;
     }
 } 
+@media (max-width: 768px) {
+    // Mobile styles
+    .banner {
+        height: 80vh;
+        .banner-h1 {
+            font-size: 2.5rem;
+        }
+        .banner-quote {
+            font-size: 1.2rem;
+        }
+        .banner-btn {
+            width: 10rem;
+            height: 2.5rem;
+            font-size: 0.9rem;
+        }
+    }
 
+    .offer {
+        height: auto;
+        padding: 20px;
+        .offer-quote {
+            font-size: 2rem;
+        }
+        .offer-p {
+            font-size: 0.9rem;
+        }
+        .offer-btn {
+            width: 10rem;
+            height: 2.5rem;
+            font-size: 0.9rem;
+        }
+    }
 
+    .services {
+        height: auto;
+        padding: 20px;
+        .services-h1 {
+            font-size: 1.2rem;
+        }
+        .services-quote {
+            font-size: 1.8rem;
+        }
+        .services-container {
+            padding-left: 0;
+            flex-direction: column;
+            height: auto;
+            .service {
+                width: 100%;
+                margin: 10px 0;
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 
-// MEDIA QUERY//
+    .welcome {
+        height: auto;
+        padding: 40px 20px;
+        .welcome-quote {
+            font-size: 2rem;
+        }
+        .download {
+            width: 10rem;
+            height: 2.5rem;
+            font-size: 0.9rem;
+        }
+    }
 
+    .portfolio {
+        height: auto;
+        padding: 20px;
+        .rece {
+            margin-bottom: 40px;
+        }
+        .image-container {
+            height: auto;
+            .images {
+                flex-direction: column;
+                .image {
+                    width: 100%;
+                    height: 150px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
 
-@media (max-width: 768px) { 
+    .buttons {
+        height: auto;
+        padding: 20px;
+        .btn {
+            flex-direction: column;
+            gap: 10px;
+            .click, .look {
+                width: 100px;
+                height: 35px;
+                margin: 10px 0;
+            }
+        }
+    }
 
-  
-      
-            
-             
-            
-     
-    
-    
-    
+    .map {
+        iframe {
+            height: 300px;
+        }
+    }
 
-
-
+    .icons {
+        height: auto;
+        padding: 20px;
+        .icon {
+            margin-top: 50px;
+            gap: 20px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+    // Tablet styles
+    .banner {
+        .banner-h1 {
+            font-size: 3.5rem;
+        }
+        .banner-quote {
+            font-size: 1.5rem;
+        }
+    }
 
+    .services {
+        .services-container {
+            padding-left: 50px;
+            .service {
+                width: 45%;
+            }
+        }
+    }
 
+    .portfolio {
+        .images {
+            .image {
+                width: 300px;
+            }
+        }
+    }
 
-
+    .buttons {
+        .btn {
+            gap: 15px;
+        }
+    }
+}
 
 
 

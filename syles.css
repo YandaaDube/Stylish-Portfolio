@@ -70,9 +70,6 @@ body {
   font-weight: 600;
 }
 
-
-/* SERVICES */
-
 .services {
   width: 100%;
   height: 450px;
@@ -100,29 +97,33 @@ body {
   padding-left: 200px;
 }
 .services .services-container .service {
-
+  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   width: 100%;
+  gap: 10px;
 }
 .services .services-container .service .s-image {
-
+  border-radius: 50%;
   width: 100px;
   height: 100px;
-  
-
+  background-color: #f8fafb;
 }
 .services .services-container .service h3 {
   color: #f8fafb;
-  margin-top: 60px;
 }
 .services .services-container .service p {
   color: #f8fafb;
+  text-align: justify;
   font-size: 10px;
 }
-
+.services .services-container .service .fa-solidfa-mustache {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .welcome {
   width: 100%;
@@ -254,4 +255,137 @@ body {
   flex-direction: row;
   margin-top: 20px;
   font-size: 10px;
-}/*# sourceMappingURL=syles.css.map */
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 80vh;
+  }
+  .banner .banner-h1 {
+    font-size: 2.5rem;
+  }
+  .banner .banner-quote {
+    font-size: 1.2rem;
+  }
+  .banner .banner-btn {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+  }
+  .offer {
+    height: auto;
+    padding: 20px;
+  }
+  .offer .offer-quote {
+    font-size: 2rem;
+  }
+  .offer .offer-p {
+    font-size: 0.9rem;
+  }
+  .offer .offer-btn {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+  }
+  .services {
+    height: auto;
+    padding: 20px;
+  }
+  .services .services-h1 {
+    font-size: 1.2rem;
+  }
+  .services .services-quote {
+    font-size: 1.8rem;
+  }
+  .services .services-container {
+    padding-left: 0;
+    flex-direction: column;
+    height: auto;
+  }
+  .services .services-container .service {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .services .services-container .service p {
+    font-size: 12px;
+  }
+  .welcome {
+    height: auto;
+    padding: 40px 20px;
+  }
+  .welcome .welcome-quote {
+    font-size: 2rem;
+  }
+  .welcome .download {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+  }
+  .portfolio {
+    height: auto;
+    padding: 20px;
+  }
+  .portfolio .rece {
+    margin-bottom: 40px;
+  }
+  .portfolio .image-container {
+    height: auto;
+  }
+  .portfolio .image-container .images {
+    flex-direction: column;
+  }
+  .portfolio .image-container .images .image {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .buttons {
+    height: auto;
+    padding: 20px;
+  }
+  .buttons .btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .buttons .btn .click, .buttons .btn .look {
+    width: 100px;
+    height: 35px;
+    margin: 10px 0;
+  }
+  .map iframe {
+    height: 300px;
+  }
+  .icons {
+    height: auto;
+    padding: 20px;
+  }
+  .icons .icon {
+    margin-top: 50px;
+    gap: 20px;
+  }
+  .icons p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .banner .banner-h1 {
+    font-size: 3.5rem;
+  }
+  .banner .banner-quote {
+    font-size: 1.5rem;
+  }
+  .services .services-container {
+    padding-left: 50px;
+  }
+  .services .services-container .service {
+    width: 45%;
+  }
+  .portfolio .images .image {
+    width: 300px;
+  }
+  .buttons .btn {
+    gap: 15px;
+  }
+}
+
+/*# sourceMappingURL=syles.css.map */
